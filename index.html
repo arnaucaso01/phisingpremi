@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>🎉 Enhorabona! Has guanyat un premi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input, button {
+      margin: 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Enhorabona! Has estat seleccionat!</h1>
+  <p>Introdueix el teu nom i correu per reclamar el teu premi exclusiu.</p>
+  
+  <form action="https://formsubmit.co/arnaucaso@gmail.com" method="POST">
+    <input type="text" name="Nom" placeholder="El teu nom" required><br>
+    <input type="email" name="Correu" placeholder="El teu correu electrònic" required><br>
+    
+    <!-- Redirecció a la pàgina d'avís -->
+    <input type="hidden" name="_next" value="https://nomdelprojecte.vercel.app/avis.html">
+    
+    <button type="submit">Reclama el teu premi</button>
+  </form>
+</body>
+</html>
